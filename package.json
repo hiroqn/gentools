@@ -1,19 +1,32 @@
 {
   "name": "gentools",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "hiroqn",
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-function-bind"
+    ]
   },
+  "bugs": {
+    "url": "https://github.com/hiroqn/gentools/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
+    "babel-plugin-transform-function-bind": "^6.8.0"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "homepage": "https://github.com/hiroqn/gentools#readme",
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hiroqn/gentools.git"
   },
-  "author": "hiroqn",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hiroqn/gentools/issues"
-  },
-  "homepage": "https://github.com/hiroqn/gentools#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
