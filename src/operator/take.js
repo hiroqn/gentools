@@ -2,9 +2,11 @@ export function take(n) {
   const generator = this;
   return function * () {
     let i = 0;
-    const iterator = generator();
-    while (i < n) {
-      yield iterator.next();
+    for (value of generator()) {
+      if (i < n) {
+        break;
+      }
+      yield value;
       i += 1;
     }
   }
