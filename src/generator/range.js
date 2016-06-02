@@ -8,5 +8,5 @@ export function range(i, n) {
       yield i;
       i += 1;
     }
-  }
+  };
 }
