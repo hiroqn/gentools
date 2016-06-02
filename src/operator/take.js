@@ -3,7 +3,7 @@ export function take(n) {
   return function * () {
     let i = 0;
     for (const value of generator()) {
-      if (i < n) {
+      if (i >= n) {
         break;
       }
       yield value;
