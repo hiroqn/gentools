@@ -1,6 +1,6 @@
 {
   "name": "gentools",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "hiroqn",
   "babel": {
     "plugins": [
@@ -14,7 +14,13 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
-    "babel-plugin-transform-function-bind": "^6.8.0"
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "del": "^2.2.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-xo": "^0.11.0"
   },
   "engines": {
     "node": ">=6.0"
@@ -28,5 +34,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "envs": [
+      "node"
+    ]
   }
 }
