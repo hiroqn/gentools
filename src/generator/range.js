@@ -1,4 +1,4 @@
-export function range(i, n) {
+export function range(i = Infinity, n, step = 1) {
   return function * () {
     if (!n) {
       n = i;
@@ -6,7 +6,7 @@ export function range(i, n) {
     }
     while (i < n) {
       yield i;
-      i += 1;
+      i += step;
     }
   };
 }
