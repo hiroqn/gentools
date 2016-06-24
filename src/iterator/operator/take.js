@@ -3,7 +3,7 @@ export function * take(n) {
     return;
   }
   let i = 0;
-  for (const value of this()) {
+  for (const value of this) {
     if (i >= n) {
       return;
     }
