@@ -1,3 +1,10 @@
-/**
- * Created by hiroqn on 2016/06/24.
- */
+export function * range(i = Infinity, n, step = 1) {
+  if (typeof n !== 'number') {
+    n = i;
+    i = 0;
+  }
+  while (i < n) {
+    yield i;
+    i += step;
+  }
+}

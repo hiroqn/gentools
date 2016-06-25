@@ -1,12 +1,5 @@
-export function range(i = Infinity, n, step = 1) {
-  return function * () {
-    if (!n) {
-      n = i;
-      i = 0;
-    }
-    while (i < n) {
-      yield i;
-      i += step;
-    }
-  };
+import {range as _range} from '../generator/range';
+
+export function range(i, n, step) {
+  return _range.bind(this, i, n, step);
 }
