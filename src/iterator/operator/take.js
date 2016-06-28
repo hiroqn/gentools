@@ -4,10 +4,10 @@ export function * take(n) {
   }
   let i = 0;
   for (const value of this) {
+    yield value;
+    i += 1;
     if (i >= n) {
       return;
     }
-    yield value;
-    i += 1;
   }
 }
